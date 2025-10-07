@@ -3,9 +3,9 @@ import { FaUserCircle, FaSignOutAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm px-4">
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary border-bottom shadow-sm px-4">
       {/* Left Side - Logo / Brand */}
-      <a className="navbar-brand fw-bold text-primary" href="/">
+      <a className="navbar-brand fw-bold text-light" href="/">
         🛒 Ecommerce Admin
       </a>
 
@@ -13,8 +13,8 @@ const Navbar = () => {
       <div className="ms-auto d-flex align-items-center">
         {/* User Info */}
         <div className="d-flex align-items-center me-3">
-          <FaUserCircle size={22} className="me-2 text-primary" />
-          <span className="fw-semibold">Admin</span>
+          <FaUserCircle size={22} className="me-2 text-light" />
+          <span className="fw-semibold text-light">Admin</span>
         </div>
 
         {/* Logout Button */}

@@ -9,15 +9,15 @@ const Sidebar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className="d-flex flex-column bg-white border-end vh-100 p-4 shadow-sm">
-      <h4 className="text-center fw-bold mb-4 text-primary">Admin Panel</h4>
+    <div className="d-flex flex-column bg-secondary border-end vh-100 p-4 shadow-sm">
+      <h4 className="text-center fw-bold mb-4 text-light">Admin Panel</h4>
 
       <ul className="list-unstyled">
         <li className="mb-3">
           <Link
             to="/brands"
             className={`d-flex align-items-center px-3 py-2 rounded text-decoration-none ${
-              isActive("/brands") ? "bg-primary text-white" : "text-dark"
+              isActive("/brands") ? "bg-primary text-white" : "text-light"
             }`}
           >
             <FaTags className="me-2" />
@@ -28,7 +28,7 @@ const Sidebar = () => {
           <Link
             to="/categories"
             className={`d-flex align-items-center px-3 py-2 rounded text-decoration-none ${
-              isActive("/categories") ? "bg-primary text-white" : "text-dark"
+              isActive("/categories") ? "bg-primary text-white" : "text-light"
             }`}
           >
             <FaListAlt className="me-2" />
@@ -39,7 +39,7 @@ const Sidebar = () => {
           <Link
             to="/products"
             className={`d-flex align-items-center px-3 py-2 rounded text-decoration-none ${
-              isActive("/products") ? "bg-primary text-white" : "text-dark"
+              isActive("/products") ? "bg-primary text-white" : "text-light"
             }`}
           >
             <FaBox className="me-2" />
