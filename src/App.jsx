@@ -3,10 +3,11 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import BrandPage from "./pages/brand/brandPage";
-import CategoryPage from "./pages/category/categoryPage";
+import CategoryPage from "./pages/category/CategoryPage.jsx";
 import ProductPage from "./pages/product/productPage";
 import Sidebar from "./components/Sidebar.jsx"
 import Navbar from "./components/Navbar.jsx";
+
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/brands" element={<BrandPage />} />
                 <Route path="/categories" element={<CategoryPage />} />
                 <Route path="/products" element={<ProductPage />} />
+              
                 <Route path="*" element={<h1>Page Not Found</h1>} />
               </Routes>
             </div>

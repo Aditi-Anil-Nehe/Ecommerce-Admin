@@ -18,8 +18,8 @@ const Navbar = () => {
         </div>
 
         {/* Logout Button */}
-        <button className="btn btn-outline-danger btn-sm d-flex align-items-center">
-          <FaSignOutAlt className="me-2" /> Logout
+        <button className="btn btn-outline-light btn-sm d-flex align-items-center">
+          <FaSignOutAlt className="me-2 text-light" /> Logout
         </button>
       </div>
     </nav>
